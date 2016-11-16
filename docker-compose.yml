@@ -1,0 +1,9 @@
+privoxy:
+  build: .
+  container_name: privoxy
+  restart: always
+  net: host
+  volumes:
+    - ./privoxy/config:/etc/privoxy/config
+    - ./privoxy-blocklist.conf:/privoxy-blocklist.conf
+  
