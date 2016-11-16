@@ -1,7 +1,6 @@
 # Location of the configuration files
 confdir /etc/privoxy
 # templdir /etc/privoxy/templates
-logdir /var/log/privoxy
 
 actionsfile default.action   # Main actions file
 actionsfile user.action      # User customizations
