@@ -2,4 +2,4 @@
 
 ./privoxy-blocklist.sh
 
-/usr/sbin/privoxy --no-daemon /etc/privoxy/config
+exec /usr/sbin/privoxy --no-daemon /etc/privoxy/config
