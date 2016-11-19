@@ -7,7 +7,6 @@ services:
     restart: always
     network_mode: host
     volumes:
-      # - ./privoxy/config:/etc/privoxy/config
       - ./privoxy-blocklist.conf:/privoxy-blocklist.conf
 
     logging:
