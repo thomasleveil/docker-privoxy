@@ -8,8 +8,5 @@ services:
     network_mode: host
     volumes:
       - ./privoxy-blocklist.conf:/privoxy-blocklist.conf
-
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://192.168.1.8:514"
+    extra_hosts:
+      - "mammoth:192.168.1.8"
