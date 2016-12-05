@@ -15,3 +15,4 @@ Start with:
 
     docker-compose up -d
 
+Show stats: http://config.privoxy.org/show-status
