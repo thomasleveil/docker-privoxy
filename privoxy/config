@@ -9,6 +9,7 @@ filterfile user.filter
 
 listen-address 0.0.0.0:8118
 toggle 1
+hostname mammoth
 
 enable-edit-actions 1
 
