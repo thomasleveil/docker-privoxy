@@ -20,6 +20,8 @@ socket-timeout 300
 
 forward / localhost:3128
 
+tolerate-pipelining 1
+
 #debug     1 # Log the destination for each request Privoxy let through. See also debug 1024.
 #debug     2 # show each connection status
 #debug     4 # show I/O status
