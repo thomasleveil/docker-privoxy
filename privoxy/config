@@ -15,12 +15,20 @@ enable-edit-actions 1
 
 enforce-blocks 0
 
-keep-alive-timeout 5
+# Number of seconds after which an open connection will no longer be reused
+keep-alive-timeout 60
+
+# Whether or not outgoing connections that have been kept alive should be shared between different incoming connections
+connection-sharing 1
+
+# Number of seconds after which a socket times out if no data is received
 socket-timeout 300
 
 forward / localhost:3128
 
 tolerate-pipelining 1
+buffer-limit 10240 
+
 
 #debug     1 # Log the destination for each request Privoxy let through. See also debug 1024.
 #debug     2 # show each connection status
