@@ -1,4 +1,4 @@
-version: '2'
+version: '2.3'
 
 services:
   privoxy:
@@ -8,3 +8,6 @@ services:
     network_mode: host
     volumes:
       - ./privoxy-blocklist.conf:/privoxy-blocklist.conf
+    healthcheck:
+      test: bash -c ">/dev/tcp/127.0.0.1/8118"
+
